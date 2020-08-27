@@ -1,7 +1,5 @@
 # Контейнеризация API
 
-
-
 ## Установка
 
 #### Шаг Первый. Сборка контейнера
@@ -30,6 +28,7 @@ docker-compose run web python manage.py loaddata path/to/your/json
 docker-compose down
 ```
 ### Удаление всех Docker контейнеров
+
 ```bash
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
